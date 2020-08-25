@@ -1,22 +1,60 @@
 .main
   .header
-    %h1.header__right
+    %h1.header__left
       APEX.streamer
-    .header__left
-      検索
+    .header__right
+      = link_to "chat"
+
   .main-content
     .content
       %h2.content__header
         放送中のチャンネル
       %ui.live-channels
-        %li.live-channels__list
-          詳細
-  .footer
-    .footer-content
+        %li.live-channels-list
+          .thumbnail
+            = image_tag asset_path( "apex.webp"), class: "image"
+          .live-info
+            = image_tag asset_path("yt_icon_rgb.png"), class: "icon"
+          .channel-name
+            YouTube
+            .info
+              配信の詳細情報
+              %br
+              4時間33分
+        %li.live-channels-list
+          .thumbnail
+            = image_tag ("hqdefault_live.webp"), class: "image"
+          .live-info
+            = image_tag asset_path("yt_icon_rgb.png"), class: "icon"
+          .channel-name
+            YouTube
+            .info
+              配信の詳細情報
+              %br
+              3時間33分
+       
+              
+        
+          
+
       %h2.archive
         過去の放送
       %ui.archive-link
         %li.archive-list
-          まさし
+          [2020/07/24 19:10]
+          .archive-info
+            = image_tag asset_path("yt_icon_rgb.png"), class: "icon"
+            .archive-page
+              配信タイトル（リンク）
+        %li.archive-list
+          [2020/07/24 19:10]
+          .archive-info
+            = image_tag asset_path("yt_icon_rgb.png"), class: "icon"
+            .archive-page
+              配信タイトル（リンク）
+
+  .footer
+    .footer-content
+     
 
       
