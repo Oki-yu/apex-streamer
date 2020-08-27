@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  get 'messages/index'
-  root "messages#index"
+  devise_for :users
+  
+  root 'streams#index'
+  
+  resources :streams, only: [:index]
+  
+  resources :messages
 
   
 end
