@@ -8,6 +8,7 @@ body {
   padding: 0 0 40px;
   background-color: #000;
   height: 100vh;
+  color: #ffffff;
   
 }
 
@@ -16,7 +17,7 @@ body {
   width: 90%;
   max-width: 800px;
   margin: auto;
-  
+  color: #000;
 }
 
   .header{
@@ -28,11 +29,13 @@ body {
     &__left{
       color: #ffffff;
       font-size: 30px;
+      text-decoration: none;
       
     }
     &__right{
       color: #ffffff;
       font-size: 20px;
+      text-decoration: none;
     }
   }
 
