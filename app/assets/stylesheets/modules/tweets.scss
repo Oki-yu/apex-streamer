@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+html{
+  background-color: black;
+}
 body{
   background-color: black;
 }
@@ -42,7 +45,7 @@ body{
   
 
 }
-.user_nav.grid-6{
+.user_nav{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -85,7 +88,7 @@ body{
   overflow: scroll;
   
   .content_post{
-    margin-bottom: 15px;
+    
     padding: 30px;
     text-align :center;
     border-bottom: 1px solid #2d2d2d;
@@ -102,6 +105,17 @@ body{
   }
 
 
+}
+
+.grid-6{
+  display: flex;
+  line-height: 100px;
+  .post{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding:0 10px;
+  }
 }
 
 

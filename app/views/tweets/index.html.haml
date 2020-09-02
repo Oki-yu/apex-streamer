@@ -6,11 +6,11 @@
       %h1.grid
         = link_to 'APEX.streamer', root_path, class: "header__left"
         - if user_signed_in?
-          .user_nav.grid-6
+          .user_nav
             .user-name
-              = "#{current_user.name}様"
+              = "#{current_user.name}さん"
             .user-info
-              = link_to "マイページ", "/users/#{current_user.id}", class: "mypage"
+              -# = link_to "マイページ", "/users/#{current_user.id}", class: "mypage"
               = link_to "ログアウト", destroy_user_session_path, method: :delete, class: "logout"
               = link_to "投稿する", new_tweet_path, class: "post"
         - else

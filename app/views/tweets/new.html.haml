@@ -1,3 +1,7 @@
+- content_for :css do
+  = stylesheet_link_tag 'modules/tweets_new'
+.header__left
+  APEX.streamer
 .contents.row
   .container
     = form_with(model: @tweet, local: true) do |form|
