@@ -3,12 +3,12 @@
 %body
   .main
     .header
-      %h1.header__left
+      .header__left
         = link_to 'APEX.streamer', root_path, class: "header__left"
   
       .header__right
-        = link_to 'tweet', tweets_path
-        = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+        = link_to 'tweet', tweets_path, class: "tweet"
+        
 
     .main-content
       .content

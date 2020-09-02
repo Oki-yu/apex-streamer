@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order('id DESC')
   end
 
 
@@ -12,7 +12,13 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(tweet_params)
+    @tweet = Tweet.create(tweet_params)
+    if @tweet.save
+      redirect_to tweets_path, notice: '投稿が完了しました'
+    else
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+    end
   end
 
   def destroy

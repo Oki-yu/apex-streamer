@@ -5,9 +5,6 @@
 html{
   background-color: black;
 }
-body{
-  background-color: black;
-}
 
 
 
@@ -33,7 +30,6 @@ body{
   color: #ffffff;
   font-size: 30px;
   text-decoration: none;
-  line-height: 100px;
 }
 
 .grid{
@@ -86,6 +82,7 @@ body{
   max-width: 600px;
   margin: auto;
   overflow: scroll;
+  color: black;
   
   .content_post{
     
@@ -109,7 +106,7 @@ body{
 
 .grid-6{
   display: flex;
-  line-height: 100px;
+  height: 100px;
   .post{
     text-decoration: none;
     color: #ffffff;

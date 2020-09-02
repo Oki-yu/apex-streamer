@@ -1,4 +1,12 @@
-.contents.row
-  .success
-    %h3 削除が完了しました。
-    %a.btn{:href => "/"} 投稿一覧へ戻る
+- content_for :css do
+  = stylesheet_link_tag 'modules/done'
+.header__bar
+  .grid
+    = link_to 'APEX.streamer', root_path, class: "header__left"
+.done
+  .done__title
+    削除が完了しました。
+  .done__backlink
+    =link_to "投稿一覧へ戻る", tweets_path, class:"link" 
+    
+
