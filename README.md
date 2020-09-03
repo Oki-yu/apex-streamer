@@ -1,24 +1,35 @@
-# README
+README.md
+# APEX.streamer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+APEXというゲームの交流アプリ
 
-Things you may want to cover:
+## 簡単な説明
 
-* Ruby version
 
-* System dependencies
+ユーザー登録機能
+写真や文字の投稿機能
+動画配信サイトで配信中の放送へのリンク（実装予定）
 
-* Configuration
 
-* Database creation
+***デモ***
 
-* Database initialization
+![デモ](https://user-images.githubusercontent.com/67727302/92088968-8e228f00-ee08-11ea-8197-c251fa4b81f5.gif)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## 使い方
+
+1. 使い方
+2. 使い方
+3. 使い方
+
+
+
+
+## デプロイ
+
+1. デプロイ
+2. デプロイ
+3. デプロイ
+
