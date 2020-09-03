@@ -30,5 +30,5 @@ APEXというゲームの交流アプリ
 ## デプロイ
 
 herokuを使ってデプロイしています。
-本番環境の画像はAWSのS３に保存（実装予定）
+本番環境の画像はAWSのS３に保存（実装予定）</br>
 URL(https://limitless-lowlands-01429.herokuapp.com/)
