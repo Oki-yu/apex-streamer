@@ -6,7 +6,7 @@ class User < ApplicationRecord
   
   has_many :tweets
 
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true, length: { maximum: 7 }
 
   
 end

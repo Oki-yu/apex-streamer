@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
-    @tweets = Tweet.all.order('id DESC')
+    @tweets = Tweet.includes(:user).order('id DESC')
   end
 
 
@@ -21,11 +21,26 @@ class TweetsController < ApplicationController
     end
   end
 
+  def edit
+    @tweet = Tweet.find(params[:id])
+  end
+
+  def update
+    tweet = Tweet.find(params[:id])
+    if tweet.update(tweet_params)
+      redirect_to tweets_path, notice: '編集が完了しました'
+    else
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :edit
+    end
+  end
+
   def destroy
     tweet = Tweet.find(params[:id])
     tweet.destroy
   end
 
+  
 
   private
   def tweet_params
