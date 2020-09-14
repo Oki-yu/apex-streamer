@@ -52,5 +52,5 @@ YouTube等のAPIを取得して配信のリンクを表示したい
 ## デプロイ
 
 herokuを使ってデプロイしています。
-本番環境の画像はAWSのS３に保存（実装予定）</br>
+画像はAWSのS３に保存</br>
 URL(https://limitless-lowlands-01429.herokuapp.com/)
