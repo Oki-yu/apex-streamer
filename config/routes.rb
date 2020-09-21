@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   
   resources :streams, only: [:index]
   resources :tweets
-  resources :users, only: :show
+  resources :users
   
-  resources :messages
+
 
   
 end
